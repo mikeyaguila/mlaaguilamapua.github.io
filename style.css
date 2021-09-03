@@ -34,24 +34,6 @@ a {
     margin-left: auto;
 }
 
-/*@media (min-width: 768px) {
-    .container {
-        width: 750px;
-    }
-}
-
-@media (min-width: 992px) {
-    .container {
-        width: 970px;
-    }
-}
-
-@media (min-width: 1200px) {
-    .container {
-        width: 1170px;
-    }
-}*/
-
 @media (min-width: 768px ) {
     .container {
         width: 100%;
@@ -115,15 +97,6 @@ nav ul a:hover {
     -ms-grid-column: 1;
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
-    /*padding: 0 15px;*/
-}
-
-@media (min-width: 768px) {
-    /*#section1 {
-        -ms-grid-column: 2;
-        -ms-grid-column-span: 10;
-        grid-column: 1 / 12;
-    }*/
 }
 
 .section1__posts {
@@ -139,7 +112,6 @@ nav ul a:hover {
         -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
         grid-gap: 15px;
-        /*margin-bottom: 15px;*/
     }
 }
 
@@ -155,7 +127,6 @@ nav ul a:hover {
     text-align: center;
     background: url('imgs/hero.png') no-repeat center center/cover;
     opacity: .9;
-    border-radius: 0.4rem;
 }
 
 .hero h1 {
@@ -192,7 +163,6 @@ nav ul a:hover {
 }
 
 .section1__item:hover {
-    /*transform: translateY(-0.5%);*/
     box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);
 }
 
@@ -216,10 +186,9 @@ nav ul a:hover {
 
 .card__text {
     color: #797e83;
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: 200;
-    /*letter-spacing: 0.1rem;
-    line-height: 1.7;*/
+    line-height: 1.7;
     margin-bottom: 2.5rem;
 }
 
@@ -283,7 +252,6 @@ nav ul a:hover {
         -ms-grid-columns: 2fr 1fr;
         grid-template-columns: 2fr 1fr;
         grid-gap: 10px;
-        /*margin-bottom: 15px;*/
     }
 }
 
@@ -328,7 +296,6 @@ nav ul a:hover {
     background: url('imgs/section2-hero.png') no-repeat center;
     background-size: cover;
     opacity: 0.9;
-    /*border-radius: 0.4rem;*/
 }
 
 .section2__inner {
@@ -365,14 +332,11 @@ nav ul a:hover {
         color: #fff;
         font-weight: 400;
         font-size: 1em;
-        /*text-align: left;*/
     }
 }
 
 .section2__button {
     background-color: transparent;
-    /*--color-from: #444;
-    --color-to: #888;*/
     background-image: linear-gradient( to right, #444, #888 );
     background-blend-mode: overlay;
     color: #fff;
@@ -408,7 +372,6 @@ nav ul a:hover {
 .gallery__row {
     width: 100%;
     height: 70vh;
-    /*max-width: 1000px;*/
     margin: 10px 0;
     display: flex;
     flex-wrap: wrap;
@@ -417,7 +380,6 @@ nav ul a:hover {
 .gallery__row .item {
     height: 50%;
     box-shadow: 5px 4px 10px 0px rgba(226,204,189,1);
-    /*box-shadow: 0 4rem 8rem rgba(0, 0, 0, 0.2);*/
 }
 
 .item-1 {
@@ -509,7 +471,7 @@ nav ul a:hover {
     grid-row-end: 6;
     /** Alternative Syntax **/
     /* grid-column: 5 / span 4;
-  grid-row: 1 / span 5; */
+    grid-row: 1 / span 5; */
 }
 
 .gallery__item--4 {
@@ -550,13 +512,11 @@ nav ul a:hover {
     -ms-grid-column-span: 12;
     grid-column: 1 / 13;
     position: relative;
-    /*min-height: 50vh;
-    padding: 5em 10em;*/
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background: url('imgs/contact-bg-4.png');
+    background: url('imgs/contact.png');
     background-size: cover;
     background-position: bottom center;
 }
@@ -591,7 +551,7 @@ nav ul a:hover {
     align-items: center;
     width: 100%;
     margin-top: 2em;
-    margin-bottom: 2em;
+    margin-bottom: 3em;
 }
 
 @media (min-width: 992px) {
@@ -601,7 +561,6 @@ nav ul a:hover {
 }
 
 .contact__info {
-    /*width: 100%;*/
     display: flex;
     flex-direction: column;
 }
@@ -641,9 +600,9 @@ nav ul a:hover {
     color: #fff;
 }
 
-    .contact__box .contact__text p a:hover {
-        border-bottom: 1px solid #e0772d;
-    }
+.contact__box .contact__text p a:hover {
+    border-bottom: 1px solid #e0772d;
+}
 
 .contact__box .contact__text h3 {
     font-weight: 500;
@@ -703,20 +662,10 @@ nav ul a:hover {
 .contact__form .form__input input:valid ~ span,
 .contact__form .form__input textarea:focus ~ span,
 .contact__form .form__input textarea:valid ~ span {
-    /*color: #e91e63;*/
     font-size: 13px;
     transform: translateY(-20px);
 }
 
-.contact__form .form__input input[type="submit"] {
-    width: 100px;
-    background: #00bcd4;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    padding: 10px;
-    font-size: 18px;
-}
 
 /*=====
     Footer
@@ -734,11 +683,24 @@ footer {
     align-items: center;
     flex-direction: column;
     text-align: center;
-    
 }
 
-.footer__content p{
+.footer__content p {
     margin-top: 2em;
+    max-width: 90%;
+    color: #797e83;
+}
+
+@media (min-width: 768px) {
+    .footer__content p {
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer__content p {
+        max-width: 30%;
+    }
 }
 
 .footer__socials {
@@ -755,7 +717,6 @@ footer {
 
 .footer__socials a {
     text-decoration: none;
-    /*color: #fff;*/
 }
 
 .footer__socials a i {
@@ -763,8 +724,20 @@ footer {
     transition: color .4s ease;
 }
 
-.footer__socials a:hover i {
-    color: #e0772d;
+.footer__socials a i.fa-youtube:hover {
+    color: #de463b;
+}
+
+.footer__socials a i.fa-facebook:hover {
+    color: #3b5999;
+}
+
+.footer__socials a i.fa-instagram:hover {
+    color: #e1306c;
+}
+
+.footer__socials a i.fa-github:hover {
+    color: #333333;
 }
 
 .footer__bottom {
