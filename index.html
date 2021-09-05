@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
           integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" 
           crossorigin="anonymous">
@@ -20,7 +20,7 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="about-me.html">About</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="blog-post.html">Blog</a></li>
@@ -35,6 +35,16 @@
             <!--<h1>Mikey A.</h1>-->
             <h1>Live in the moment.</h1>
         </div>
+
+        <section id="blockquote-section">
+            <div class="quote">
+                <blockquote>
+                    <p>Ever tried. Ever failed. No matter.<br>Try again. Fail again. Fail better.</p>
+                    <cite>Samuel Beckett</cite>
+                </blockquote>
+            </div>
+        </section>
+
         <!--Hero end-->
         <!--Main grid start-->
         <main class="grid">
@@ -67,7 +77,7 @@
                             <img class="card__img" src="imgs/card-3.png" alt="Snowy Mountains">
                             <div class="card__content">
                                 <h1 class="card__header">Utah sunsets</h1>
-                                <p class="card__text">High mountain ranges in Asia cover a significant amount of land with their <strong>massive</strong> foothills towering over other landforms.</p>
+                                <p class="card__text">High mountain ranges in Asia cover a significant amount of land with their <strong>massive</strong> foothills.</p>
                                 <button class="card__button">Explore <span>&rarr;</span></button>
                             </div>
                         </div>
@@ -77,7 +87,7 @@
                         <div class="card">
                             <img class="card__img" src="imgs/card-4.png" alt="Snowy Mountains">
                             <div class="card__content">
-                                <h1 class="card__header">Utah sunsets</h1>
+                                <h1 class="card__header">Argentina meadows</h1>
                                 <p class="card__text">Because it was in a <i>low-lying</i> valley, the grassy meadow was the home to many types of field animals</p>
                                 <button class="card__button">Explore <span>&rarr;</span></button>
                             </div>
@@ -148,26 +158,40 @@
                 </div>
             </section>
             <!--section 2 grid end-->
-
             <!--section 3 grid start-->
             <section id="section3">
                 <div class="gallery">
                     <figure class="gallery__item gallery__item--1">
-                        <img src="https://images.unsplash.com/photo-1499198116522-4a6235013d63?auto=format&fit=crop&w=1233&q=80" alt="Gallery image 1" class="gallery__img">
+                        <img src="imgs/blue.png" alt="Gallery image 1" class="gallery__img">
+                        <figcaption>
+                            <div class="fig-title">Blue.</div>
+                            <div class="fig-author">by Annie Spratt</div>
+                        </figcaption>
                     </figure>
                     <figure class="gallery__item gallery__item--2">
-                        <img src="https://images.unsplash.com/photo-1492760864391-753aaae87234?auto=format&fit=crop&w=1336&q=80" alt="Gallery image 2" class="gallery__img">
+                        <img src="imgs/orange.png" alt="Gallery image 2" class="gallery__img">
+                        <figcaption>
+                            <div class="fig-title">Orange.</div>
+                            <div class="fig-author">by Brian Robertson</div>
+                        </figcaption>
                     </figure>
                     <figure class="gallery__item gallery__item--3">
                         <img src="https://images.unsplash.com/photo-1503631285924-e1544dce8b28?auto=format&fit=crop&w=1234&q=80" alt="Gallery image 3" class="gallery__img">
+                        <figcaption>
+                            <div class="fig-title">Red.</div>
+                            <div class="fig-author">by Travis Mclaughlin</div>
+                        </figcaption>
                     </figure>
                     <figure class="gallery__item gallery__item--4">
                         <img src="https://images.unsplash.com/photo-1510425463958-dcced28da480?auto=format&fit=crop&w=1352&q=80" alt="Gallery image 4" class="gallery__img">
+                        <figcaption>
+                            <div class="fig-title">Yellow.</div>
+                            <div class="fig-author">by Cobb Shelton</div>
+                        </figcaption>
                     </figure>
                 </div>
             </section>
             <!--section 3 grid end-->
-
             <!--section 4 grid start-->
             <section id="section4">
                 <div class="contact__content">
